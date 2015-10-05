@@ -7,6 +7,8 @@
     echo $this->Html->meta('viewport', 'width=device-width, initial-scale=1, maximum-scale=1');
     ?>
     <title><?php echo $this->fetch('title'); ?></title>
+    <meta name="description" content="Cùng lót dép hóng những sự kiện hot nhất, hay nhất hiện nay của cộng đồng mạng">
+    <meta name="keywords" content="sự kiện hot, lót dép hóng, lot dep hong, hóng hớt, hóng, sự kiện nóng, lotdephong.com">
     <?php
     if (!$this->fetch('image')) {
         $this->assign('image', 'img/cover.png');

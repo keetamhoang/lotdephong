@@ -13,7 +13,7 @@
                 $time = $this->Translate->trans($time);
                 ?>
                 <?= $this->Html->link(
-                    $this->Html->image('main/posts/'.$eachEvent['Event']['img']).
+                    $this->Html->image('main/posts/'.$eachEvent['Event']['img'], array('alt' => $eachEvent['Event']['name'])).
                     '<h1>'.$eachEvent['Event']['name'].'</h1>'.
                     '<p class="content-event">'.htmlspecialchars_decode($eachEvent['Event']['description']).'</p>'.
                     '<div class="show-info">'.

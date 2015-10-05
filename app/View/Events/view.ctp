@@ -152,7 +152,8 @@
                                     <?= htmlspecialchars_decode($post['Post']['content']) ?>
                                     <?php if (!empty($post['Post']['img'])): ?>
                                     <?= $this->Html->image(
-                                        'main/posts/' . $post['Post']['img']
+                                        'main/posts/' . $post['Post']['img'],
+                                        array('alt' => $post['Post']['name'])
                                     ); ?>
                                     <?php endif ?>
                                 </div>

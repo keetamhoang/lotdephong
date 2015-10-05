@@ -17,7 +17,7 @@
             ?>
             <?=
             $this->Html->link(
-                $this->Html->image('main/posts/'.$event['Event']['img']).
+                $this->Html->image('main/posts/'.$event['Event']['img'], array('alt' => $event['Event']['name'])).
                 '<div class="main-grid">'.
                 '<h1>'.$event['Event']['name'].'</h1>'.
                 $description.
