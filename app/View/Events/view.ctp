@@ -393,8 +393,6 @@
     window.fbAsyncInit = function() {
         FB.Event.subscribe('comment.create',
             function(response) {
-//                alert('You commented in URL: ' + response.href + 'CommentID: ' + response.commentID);
-                // do an ajax call to server to store user,commentID,href info if you require
                 var base_url = window.location.origin;
 
                 $.ajax({
