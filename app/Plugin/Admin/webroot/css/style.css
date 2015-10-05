@@ -1,0 +1,105 @@
+.action {
+    width: 90px;
+}
+
+.action a {
+    padding-left: 5px;
+    font-size: 19px;
+}
+
+.action a:first-child {
+    padding: 0px;
+}
+
+.ok a {
+    color: #0BBD0C;
+    font-size: 19px;
+}
+
+.not-ok a {
+    color: #DD2828;
+    font-size: 19px
+}
+
+.events-table .image img {
+    width: 50px;
+}
+
+.posts-table .image img {
+    width: 80px;
+}
+
+.updating-check, .hot-check, .old-check {
+    text-align: center;
+}
+
+.pagination {
+    margin: 10px 0px;
+}
+
+.pagination-right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+#editEventForm .checkbox label, #addEventForm .checkbox label {
+    margin-right: 30px;
+}
+
+.image-event img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+td {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.navbar-inverse .navbar-nav .active > a {
+    color: #FFF;
+    background-color: #080808;
+}
+
+.each {
+    overflow: hidden;
+    background: #EFEFEF;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+.each p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.date {
+    border-bottom: 1px solid #ccc;
+}
+
+.name {
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    /*padding: 10px;*/
+}
+
+.actions {
+    font-size: 30px;
+}
+.complete {
+    color: #3CDB3C;
+}
+
+.delete {
+    color: #DB2F2F;
+}
+
+.each .event {
+    border-bottom: 1px solid #ccc;
+}

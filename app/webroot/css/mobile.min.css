@@ -1,0 +1,213 @@
+hr {border-top: 1px solid #C5C1C1;}
+.navbar {
+    margin-bottom: 15px;
+}
+.container {
+    padding: 0px;
+    background-color: #E9EAED;
+}
+.logo img {width: 130px;}
+a, a:focus, a:active, a:hover {text-decoration: none}
+a.navbar-brand {padding-top: 5px;}
+.white-panel {
+    margin-bottom: 10px;
+    background-color: #FFF;
+    padding: 5px 10px 0px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.white-panel img {width: 100%}
+.white-panel h1 {
+    font-size: 19px;
+    color: #A92733;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.white-panel p.content-event {
+    color: #464646;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.white-panel .show-info {overflow: hidden; color: #000; font-size: 16px;}
+.white-panel .show-info .time-update {float: left;}
+.white-panel .show-info .social-count {float: right;}
+.next-btn {
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+.next-link {
+    padding: 10px;
+    text-align: center;
+    background: #5CC0DA none repeat scroll 0% 0%;
+    color: #FFF;
+    border-radius: 5px;
+    border: medium none;
+    display: block;
+    width: 100%;
+
+}
+.title-h2 {
+    padding: 0px 10px;
+    background-color: #FFF;
+}
+.list-header {
+    margin: 0px;
+    padding: 5px 10px;
+    border-left: 3px solid #5CB85C;
+    border-bottom: 1px solid #5CB85C;
+    font-size: 18px;
+}
+span.disabled {display: none}
+.like-fb{
+    display: block;
+    vertical-align: middle;
+    height: 25px;
+    float: left;
+    margin-top: 16px;
+}
+.post {
+    padding: 0px 0px 5px;
+    width: 100%;
+    background-color: #E9EAED;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.post-category .img {
+    width: 33%;
+    float: left;
+}
+.post-category img {
+    width: 100%;
+}
+.txt {margin-left: 35%;}
+.txt .title {
+    color: #A92733;
+    font-size: 18px;
+}
+.txt .desc {color: #2D2D2D}
+.post-view .title-post {
+    margin: 0px 0px 10px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.post-view .time-update {
+    float: left;
+}
+.post-view .chose-option {
+    margin-left: 8px;
+    font-size: 20px;
+    line-height: 20px;
+    float: left;
+}
+.post-view .show-time {
+    border: 1px solid #E6E6E6;
+    padding: 6px 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.post-view img {width: 100%}
+.detail-sort a {font-size: 12px}
+.detail-sort a.active {font-size: 16px}
+.post-view .each {
+    padding: 5px 10px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.post-view .each .title h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.post-view .each .content {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 6px;
+}
+.link-group {
+    list-style: none;
+    padding-left: 0px;
+}
+.left-title {
+    border-left: 2px solid #5CB85C;
+    padding: 2px 0px 2px 7px;
+    /*box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);*/
+    margin-bottom: 6px;
+    color: #929292;
+}
+.facebook_share {
+    background-color: #3b5998;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 19px;
+}
+.facebook_share {
+    display: inline-block;
+    color: #FFF;
+}
+.facebook_share .fb_f {
+    position: relative;
+    display: inline-block;
+    background: url('../images/fb_f.png') no-repeat;
+    width: 14px;
+    height: 22px;
+    background-size: cover;
+    vertical-align: middle;
+}
+.facebook_share span {
+    color: #fff;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.suggest-share p {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #009cff;
+    font-size: 28px;
+    font-weight: normal;
+    padding-top: 20px;
+}
+.relate-event-mobile {
+    width: 48%;
+    float: left;
+    margin-left: 5px;
+}
+#main {
+    display: inline-block;
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: -30px;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+.post-category {
+    background-color: #FFF;
+    padding: 5px;
+}
+.not-found {
+    padding: 10px;
+    background-color: #FFF;
+}
+footer {
+    padding: 20px;
+    background-color: #FFF;
+}
+.send-post .post {
+    background-color: #FFF;
+}
+.send-post .title-send {
+    font-size: 27px;
+    font-weight: bold;
+}
+.send-post .title-send a {
+    color: #000;
+}

@@ -1,0 +1,47 @@
+msgid "just now"
+msgstr "just now"
+
+msgid "just"
+msgstr "just"
+
+msgid "now"
+msgstr "now"
+
+msgid "ago"
+msgstr "ago"
+
+msgid "hour"
+msgstr "hour"
+
+msgid "hours"
+msgstr "hours"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "minute"
+msgstr "minute"
+
+msgid "hours,"
+msgstr "hours,"
+
+msgid "hour,"
+msgstr "hour,"
+
+msgid "on"
+msgstr "on"
+
+msgid "in"
+msgstr "in"
+
+msgid "second"
+msgstr "second"
+
+msgid "seconds"
+msgstr "seconds"
+
+msgid "day"
+msgstr "day"
+
+msgid "day,"
+msgstr "day,"

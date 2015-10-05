@@ -1,0 +1,47 @@
+msgid "just now"
+msgstr "vừa mới đây"
+
+msgid "just"
+msgstr "vừa"
+
+msgid "now"
+msgstr "mới đây"
+
+msgid "ago"
+msgstr "trước"
+
+msgid "hour"
+msgstr "giờ"
+
+msgid "hours"
+msgstr "giờ"
+
+msgid "minutes"
+msgstr "phút"
+
+msgid "minute"
+msgstr "phút"
+
+msgid "hours,"
+msgstr "giờ,"
+
+msgid "hour,"
+msgstr "giờ,"
+
+msgid "on"
+msgstr "ngày"
+
+msgid "in"
+msgstr "trong"
+
+msgid "second"
+msgstr "giây"
+
+msgid "seconds"
+msgstr "giây"
+
+msgid "day"
+msgstr "ngày"
+
+msgid "day,"
+msgstr "ngày,"
