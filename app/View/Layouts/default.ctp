@@ -84,7 +84,6 @@
             margin_bottom: 50,
             single_column_breakpoint: 0
         });
-        fixHeight();
     });
 
     $(window).load(function(e) {
