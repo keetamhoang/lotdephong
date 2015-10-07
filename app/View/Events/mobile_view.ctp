@@ -81,6 +81,21 @@
             ); ?>
         </div>
     </div>
+    <div class="share-top">
+        <div class="container">
+            <div class="facebook_share">
+                <i class="fa fa-facebook" style="color: #FFF"></i>
+                <span>Share</span>
+            </div>
+            <div class="title">
+                <h2 class="ellipsis"><?= $event['Event']['name'] ?></h2>
+                <div class="like-event">
+                    <?= $this->element('like_button_mobile') ?>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
     <div class="main-event">
         <!--nocache-->
         <?php
@@ -117,10 +132,12 @@
                                 if (!empty($post['Link'])) {
                                     foreach ($post['Link'] as $link) { ?>
                                         <li>
-                                            <div>
+                                            <div class="link-group-div">
                                                 <span><?= $link['name']; ?>:</span>
+                                                <pre>
                                                 <a target="_blank"
                                                    href="<?= $link['link']; ?>"><?= $link['link'] ?></a>
+                                                </pre>
                                             </div>
                                         </li>
                                     <?php }
@@ -218,4 +235,44 @@
                 'width=1626,height=436');
         })
     });
+</script>
+<script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+            if ($(this).scrollTop() < 100) {
+                $('.share-top').removeClass('slidedown').addClass('slideup');
+            }
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        if (st > lastScrollTop){
+            // Scroll Down
+            $('.share-top').removeClass('slideup').addClass('slidedown');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('.share-top').removeClass('slideup').addClass('slidedown');
+            }
+        }
+
+
+        lastScrollTop = st;
+    }
 </script>

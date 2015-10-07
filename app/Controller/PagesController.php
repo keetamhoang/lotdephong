@@ -8,8 +8,8 @@ class PagesController extends AppController {
 
     public $cacheAction = array(
 //        'index' => '300',
-        'clause' => '30 days',
-        'contact' => '30 days'
+//        'clause' => '30 days',
+//        'contact' => '30 days'
     );
 
     public function index($page = 1) {

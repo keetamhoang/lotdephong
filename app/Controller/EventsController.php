@@ -10,9 +10,9 @@ class EventsController extends AppController {
     public $uses = array('Event', 'Post');
 
     public $cacheAction = array(
-        'index' => array('callbacks' => true, 'duration' => '1200'),
-        'hot' => array('callbacks' => true, 'duration' => '1200'),
-        'old' => array('callbacks' => true, 'duration' => '1200'),
+//        'index' => array('callbacks' => true, 'duration' => '1200'),
+//        'hot' => array('callbacks' => true, 'duration' => '1200'),
+//        'old' => array('callbacks' => true, 'duration' => '1200'),
 //        'view' => array('callbacks' => true, 'duration' => '300'),
     );
 

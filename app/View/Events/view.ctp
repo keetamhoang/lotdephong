@@ -84,7 +84,7 @@
                                 ) ?>
                                 </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="padding-right: 0px">
                             <div class="detail-sort">
                                 <span>Sắp xếp: </span>
                                 <?= $this->Html->link(
@@ -114,16 +114,43 @@
                             </div>
                         </div>
                     </div>
+                    <div class="clearfix">
+                        <div class="action-share">
+                            <div class="facebook_share" style="float: left;">
+                                <i class="fa fa-facebook" style="color: #FFF;"></i>
+                                <span>Share lên Facebook</span>
+                            </div>
+                            <div class="facebook_like" style="float: left;">
+                                <div class="fb-like-share">
+                                    <?= $this->element('like_button'); ?>
+                                </div>
+                            </div>
+                            <div class="share-top">
+                                <div class="container">
+                                    <div class="facebook_share" style="float: left;">
+                                        <i class="fb_f" style="color: #FFF;"></i>
+                                        <span>Share lên Facebook</span>
+                                    </div>
+                                    <?= $this->Html->image('main/posts/'.$event['Event']['img']); ?>
+                                    <div class="title" style="border: none">
+                                        <h2 class="ellipsis"><?= $event['Event']['name'] ?></h2>
+                                        <div class="facebook_like" style="float: left;">
+                                            <div class="fb-like-share" style="margin: 0px;">
+                                                <?= $this->element('like_button'); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="clearfix"></div>
                 <p class="desc">
                     <?= htmlspecialchars_decode($event['Event']['description']); ?>
                 </p>
-
-                <div class="fb-like-share">
-                <?= $this->element('like_button'); ?>
-                </div>
 
                 <div class="main-event">
 
@@ -419,4 +446,54 @@
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+    $(document).ready(function () {
+        $('.facebook_share').on('click', function () {
+            window.open(
+                'https://www.facebook.com/sharer/sharer.php?u=' + '<?php echo('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); ?>',
+                'facebook-share-dialog',
+                'width=626,height=436');
+        })
+    });
+</script>
+<script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+            if ($(this).scrollTop() < 200) {
+                $('.share-top').removeClass('slidedown').addClass('slideup');
+            }
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        if (st > lastScrollTop){
+            // Scroll Down
+            $('.share-top').removeClass('slidedown').addClass('slideup');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('.share-top').removeClass('slideup').addClass('slidedown');
+            }
+        }
+
+
+        lastScrollTop = st;
+    }
 </script>

@@ -592,7 +592,7 @@ a, a:hover, a:active, a:focus {
 
 .post .desc {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     margin-top: 3px;
     padding: 0;
     line-height: 1.2;
@@ -622,6 +622,7 @@ a, a:hover, a:active, a:focus {
     background: rgb(255, 255, 255) none repeat scroll 0% 0%;
     padding: 8px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DDD;
 }
 
 .sm-post a {
@@ -896,7 +897,9 @@ a, a:hover, a:active, a:focus {
 .suggests .item {
     padding: 5px;
     float: left;
-    width: 33.33%
+    width: 33.33%;
+    width: 32.33%;
+    margin-right: 6px;
 }
 
 .suggests .item a {
@@ -1376,16 +1379,14 @@ a, a:hover, a:active, a:focus {
     float: none;
     height: auto;
     margin-bottom: 11px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .details .post h1 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .details .post .meta > div {
     background: #FEFEFE none repeat scroll 0% 0%;
-    border: 1px solid #CCC;
     color: #555;
     border-radius: 3px;
     padding: 10px 0px 10px;
@@ -1645,12 +1646,12 @@ a, a:hover, a:active, a:focus {
 }
 
 .fb-like-share {
-    margin: 15px 0px 15px;
+    margin: 10px 20px;
 }
 
 /*------------*/
 body {
-    background: #E9EAED;
+    background: #FFF;
 }
 
 #blog-landing {
@@ -1879,9 +1880,10 @@ body{
 .time-update {
     font-size: 16px;
     line-height: 28px;
+    padding-left: 0px;
 }
 .title-post {
-    color: #000;
+    color: #555;
 }
 .sm-post .social-count {
     text-align: right;
@@ -1932,6 +1934,8 @@ a.colorful {
 
 .post-category {
     background-color: #FFF;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DDD;
 }
 
 .post-category .meta {
@@ -1947,7 +1951,9 @@ a.colorful {
 
 .relate-event {
     background: #FFF;
-    border-right: 1px solid #E0E0E0;
+    /*border-right: 1px solid #E0E0E0;*/
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DDD;
 }
 
 .relate-event:last-child {
@@ -1976,4 +1982,19 @@ a.colorful {
 
 .image-load-noti img {
     width: 30px;
+}
+
+.facebook_share {
+    background-color: #3B5998;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 19px;
+}
+
+.slideup {
+    top: -60px;
 }

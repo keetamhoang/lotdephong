@@ -211,3 +211,73 @@ footer {
 .send-post .title-send a {
     color: #000;
 }
+
+.link-group-div pre {
+    white-space: pre-line;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    background-color: #FFF;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.share-top.slidedown {
+    -webkit-transform: translate3d(0,60px,0);
+    -moz-transform: translate3d(0,60px,0);
+    -o-transform: translate3d(0,60px,0);
+    transform: translate3d(0,60px,0);
+}
+.share-top {
+    width: 100%;
+    position: fixed;
+    top: -60px;
+    left: 0;
+    height: 60px;
+    z-index: 1001;
+    background: #f8f8f8;
+    border: 1px solid transparent;
+    border-color: #e7e7e7;
+    border-width: 0 0 1px;
+    text-align: left;
+    padding: 5px 0;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -o-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.share-top .container {
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #f8f8f8;
+}
+.share-top .facebook_share {
+    float: left;
+    width: 100px;
+    display: block;
+    margin-top: 4px;
+}
+.share-top .title {
+    display: block;
+    margin: 1px 0 0 106px;
+}
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.share-top .title h2 {
+    font-size: 16px;
+    margin: 3px 0px 4px 0px;
+    font-weight: bold;
+}
+.slideup {
+    top: -60px;
+}
